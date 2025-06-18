@@ -17,17 +17,17 @@ data.raw.resource["multi-ore"].minable = {
     },
 }
 
-data_util.convert_ingredient("optical-cable","glass", "kr-glass" )
-data_util.convert_ingredient("ai-trainer","glass", "kr-glass" )
-data_util.convert_ingredient("3d-data-storage","glass", "kr-glass" )
-data_util.convert_ingredient("concrete-from-molten-iron-and-sand","sand", "kr-sand" )
-data_util.convert_ingredient("petroleum-from-sand-sulfur-steam-carbon","sand", "kr-sand" )
-data_util.convert_ingredient("silicon","sand", "kr-sand" )
+--data_util.convert_ingredient("optical-cable","glass", "kr-glass" )
+--data_util.convert_ingredient("ai-trainer","glass", "kr-glass" )
+--data_util.convert_ingredient("3d-data-storage","glass", "kr-glass" )
+--data_util.convert_ingredient("concrete-from-molten-iron-and-sand","sand", "kr-sand" )
+--data_util.convert_ingredient("petroleum-from-sand-sulfur-steam-carbon","sand", "kr-sand" )
+--data_util.convert_ingredient("silicon","sand", "kr-sand" )
 
 if not mods["aai-industry"] then
-    data.raw.item["glass"].hidden = true
+    data.raw.item["kr-glass"].hidden = true
     data.raw.recipe["glass"].hidden = true
-    data.raw.item["sand"].hidden = true
+    data.raw.item["kr-sand"].hidden = true
     data_util.remove_prerequisite("moshine-tech-data-extractor", "moshine-tech-glass")
 end
 

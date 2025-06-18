@@ -9,7 +9,7 @@ data:extend({
     ingredients = {
       { type = "item", name = "kr-silicon", amount = 3 },
       { type = "item", name = "plastic-bar", amount = 3 },
-      { type = "item", name = "kr-glass", amount = 3 },
+      mods["aai-industry"] and { type = "item", name = "glass", amount = 3 } or mods["Moshine"] and { type = "item", name = "glass", amount = 3 } or { type = "item", name = "kr-glass", amount = 3 },
       { type = "item", name = "kr-lithium", amount = 3 },
       { type = "fluid", name = "kr-nitric-acid", amount = 20 },
     },

@@ -86,10 +86,10 @@ data:extend({
     category = "smelting",
     energy_required = 16,
     ingredients = {
-      { type = "item", name = "kr-sand", amount = 16 },
+      mods["aai-industry"] and { type = "item", name = "sand", amount = 16 } or { type = "item", name = "kr-sand", amount = 16 },
     },
     results = {
-      { type = "item", name = "kr-glass", amount = 8 },
+      mods["aai-industry"] and { type = "item", name = "glass", amount = 8 } or mods["Moshine"] and { type = "item", name = "glass", amount = 8 } or { type = "item", name = "kr-glass", amount = 8 },
     },
     allow_productivity = true,
     always_show_made_in = true,
