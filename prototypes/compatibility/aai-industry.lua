@@ -23,13 +23,13 @@ data_util.remove_ingredient("solar-panel", "glass")
 data_util.remove_ingredient("lab", "glass")
 data_util.remove_ingredient("lab", "copper-plate")
 
---data_util.convert_ingredient("concrete","sand", "kr-sand" )
---data_util.convert_ingredient("concrete","glass", "kr-glass" )
---data_util.convert_ingredient("small-lamp","glass", "kr-glass" ) 
---data_util.convert_ingredient("oil-refinery","glass", "kr-glass" )
---data_util.convert_ingredient("chemical-plant","glass", "kr-glass" )
---data_util.convert_ingredient("personal-laser-defense-equipment","glass", "kr-glass" )
---data_util.convert_ingredient("laser-turret","glass", "kr-glass" )
+data_util.convert_ingredient("concrete","sand", "kr-sand" )
+data_util.convert_ingredient("concrete","glass", "kr-glass" )
+data_util.convert_ingredient("small-lamp","glass", "kr-glass" ) 
+data_util.convert_ingredient("oil-refinery","glass", "kr-glass" )
+data_util.convert_ingredient("chemical-plant","glass", "kr-glass" )
+data_util.convert_ingredient("personal-laser-defense-equipment","glass", "kr-glass" )
+data_util.convert_ingredient("laser-turret","glass", "kr-glass" )
 
 data_util.add_prerequisite("sand-processing", "kr-crusher")
 data_util.add_prerequisite("electric-lab", "electricity")
@@ -50,9 +50,9 @@ data_util.add_recipe_unlock("glass-processing", "kr-glass")
 data_util.remove_recipe_unlock("sand-processing", "sand")
 data_util.remove_recipe_unlock("glass-processing", "glass")
 
-data.raw.item["kr-glass"].hidden = true
+data.raw.item["glass"].hidden = true
 data.raw.recipe["glass"].hidden = true
-data.raw.item["kr-sand"].hidden = true
+data.raw.item["sand"].hidden = true
 data.raw.recipe["sand"].hidden = true
 
 data.raw.technology["kr-stone-processing"] = nil

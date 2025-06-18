@@ -10,7 +10,7 @@ data:extend({
     ingredients = {
       { type = "item", name = "kr-biomass", amount = 50 },
       { type = "item", name = "kr-iron-beam", amount = 10 },
-      mods["aai-industry"] and { type = "item", name = "glass", amount = 20 } or mods["Moshine"] and { type = "item", name = "glass", amount = 20 } or { type = "item", name = "kr-glass", amount = 20 },
+      { type = "item", name = "kr-glass", amount = 20 },
       { type = "item", name = "electronic-circuit", amount = 2 },
     },
     results = { { type = "item", name = "kr-bio-lab", amount = 1 } },

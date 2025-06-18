@@ -11,7 +11,7 @@ data:extend({
       { type = "item", name = "kr-steel-beam", amount = 10 },
       { type = "item", name = "kr-automation-core", amount = 3 },
       { type = "item", name = "copper-plate", amount = 10 },
-      mods["aai-industry"] and { type = "item", name = "glass", amount = 10 } or mods["Moshine"] and { type = "item", name = "glass", amount = 10 } or { type = "item", name = "kr-glass", amount = 10 },
+      { type = "item", name = "kr-glass", amount = 10 },
     },
     results = { { type = "item", name = "kr-electrolysis-plant", amount = 1 } },
   },

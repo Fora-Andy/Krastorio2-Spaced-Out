@@ -8,7 +8,7 @@ data:extend({
     energy_required = 5,
     enabled = false,
     ingredients = {
-      mods["aai-industry"] and { type = "item", name = "glass", amount = 1 } or mods["Moshine"] and { type = "item", name = "glass", amount = 1 } or { type = "item", name = "kr-glass", amount = 1 },
+      { type = "item", name = "kr-glass", amount = 1 },
       { type = "item", name = "iron-plate", amount = 2 },
       { type = "item", name = "copper-cable", amount = 1 },
       { type = "item", name = "kr-automation-core", amount = 1 },
