@@ -174,13 +174,23 @@ matter_lib.make_deconversion_recipe({
   unlocked_by = "kr-matter-copper-processing",
 })
 
-matter_lib.make_deconversion_recipe({
-  material = { type = "item", name = "kr-glass", amount = 10 },
-  matter_count = 3.5,
-  energy_required = 2,
-  needs_stabilizer = true,
-  unlocked_by = "kr-matter-stone-processing",
-})
+if mods["Moshine"] or mods["aai-industry"] then
+  matter_lib.make_deconversion_recipe({
+    material = { type = "item", name = "glass", amount = 10 },
+    matter_count = 3.5,
+    energy_required = 2,
+    needs_stabilizer = true,
+    unlocked_by = "kr-matter-stone-processing",
+  })
+else 
+  matter_lib.make_deconversion_recipe({
+    material = { type = "item", name = "kr-glass", amount = 10 },
+    matter_count = 3.5,
+    energy_required = 2,
+    needs_stabilizer = true,
+    unlocked_by = "kr-matter-stone-processing",
+  })
+end 
 
 matter_lib.make_deconversion_recipe({
   material = { type = "item", name = "iron-plate", amount = 10 },
