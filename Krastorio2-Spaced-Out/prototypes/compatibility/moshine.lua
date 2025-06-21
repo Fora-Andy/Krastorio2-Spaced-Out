@@ -9,7 +9,7 @@ data.raw.resource["multi-ore"].minable = {
     mining_particle = "iron-ore-particle",
     mining_time = 2,
     results = {
-        { type = "item", name = "kr-sand", amount = 1, probability = 28 /100 },
+        { type = "item", name = "sand", amount = 1, probability = 28 /100 },
         { type = "item", name = "neodymium", amount = 1020, probability = 0.003 /100 },
         { type = "item", name = "sulfur", amount = 1, probability = 6 /100 },
         { type = "item", name = "coal", amount = 1, probability = 12 /100 },

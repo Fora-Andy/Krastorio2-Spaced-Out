@@ -1,0 +1,237 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 2025-06-19
+  Changes:
+    - Use the Multi-spoil library for concrete mix barrels spoiling into concrete
+    - Big crusher now costs an Electric crusher even without SA
+  Compatibility:
+    - AAI Industry: Burner crusher now uses motors instead of gear wheels (electric crusher recipe will be adjusted soon(TM))
+    - Krastorio 2: Compatibility mode that merges sand and glass recipes (not finished, but a good start)
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2025-06-13
+  Changes:
+    - Buff burner crusher crafting speed from 0.5 to 0.75
+    - Buff electric crusher crafting speed from 0.75 to 1
+    - Fix alt icon location to match other 2x2 machines like furnaces
+    - Don't generate concrete mix barrel recipes unless concrete mix is enabled
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2025-06-08
+  Changes:
+    - Concrete mix barrels now spoil into 5x the amount of concrete
+    - Concrete mix barrels now spoil 3x faster
+  Locale:
+    - Add RU locale (credit: onseshigo)
+  Compatibility:
+    - Use additional_categories where possible to reduce mod compatibility issues
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2025-05-31
+  Minor Features:
+    - Add Tungsten carbide from crushed ore recipe
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2025-05-20
+  Changes:
+    - Reduce cost scale for crushed tungsten ore in tungsten plates from 2.5 to 2
+    - Reduce cost scale for crushed iron ore in advanced thruster fuel from 2.5 to 2
+  Compatibility:
+    - Add settings for BZ Tin and BZ Carbon compatibility (enabled by default)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.15
+Date: 2025-05-11
+  Changes:
+    - Prevent all productivity bonuses from being applied to asteroid reprocessing recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.3.14
+Date: 2025-05-11
+  Changes:
+    - Electric crusher is now always unlocked by researching engines
+    - Crushed ores are no longer added to asteroid crushing when byproducts are disabled
+  Compatibility:
+    - BZ Lead: Fix load error when Space Age is not enabled
+    - BZ Tin: Tin is now a byproduct from cupric asteroids if enabled (and otherwise carbonic asteroids)
+    - BZ Carbon: Flake graphite is now preferred over coal for carbonic asteroid crushing
+    - BZ Carbon: Advanced carbonic asteroid crushing now yields rough diamonds
+---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 2025-04-24
+  Compatibility:
+    - Don't modify Nuclear science pack recipe with concrete mix
+---------------------------------------------------------------------------------------------------
+Version: 0.3.12
+Date: 2025-04-24
+  Compatibility:
+    - When BZ Lead is installed, iron ore is added as byproduct for metallic asteroid crushing
+    - When BZ Tin is installed, tin ore is added as byproduct for carbonic asteroid crushing
+    - Add compatibility for Science Bottles
+---------------------------------------------------------------------------------------------------
+Version: 0.3.11
+Date: 2025-04-19
+  Changes:
+    - Make Big crusher a metallurgy recipe and set the crafting time to not 0.5 seconds
+    - Update molten glass and concrete mix graphics to match v2.0.44
+    - Refined concrete no longer costs Concrete and increase concrete mix cost from 100 to 200
+    - Rebalance molten glass cost: 75 sand from 50, yields 250 from 200 (-17%)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.10
+Date: 2025-04-19
+  Changes:
+    - Un-break technology changes not being applied oops
+---------------------------------------------------------------------------------------------------
+Version: 0.3.9
+Date: 2025-04-19
+  Changes:
+    - Tweak byproduct amounts from asteroids and only add if enabled
+    - Only add glass to space science pack if byproducts are enabled
+    - Add CN translation (#5) (thank you to Houraiji-Kyuusyou!)
+    - Add big crusher technology icon for other mods to use
+    - Allow upgrading burner crusher into electric crusher
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 2025-04-05
+  Bugfixes:
+    - Allow concrete to be recycled by not modifying recycling recipes to use concrete mix
+  Compatibility:
+    - Fix crushed coal not being accessible on Gleba start, and fix 
+---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 2025-04-03
+  Compatibility:
+    - Fix crushed coal not being accessible on Vulcanus and Fulgora start
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 2025-04-01
+  Changes:
+    - Add 1 Glass to Rail signal and Rail chain signal recipes
+    - Properly credit MeteorSwarm for basic crusher icon (modified and kitbashed from base SA but still, thanks!)
+    - Reduce cost for plastic and explosives from 3 to 2 crushed coal (from +100% relative cost compared to vanilla to +33%)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 2025-03-29
+  Balancing:
+    - Casting glass now takes 2x as long
+  Compatibility:
+    - Increased crushed tin ore cost for molten tin from 100 to 125 (+25%) so it still ends in 5
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+  Compatibility:
+    - Typo
+    - Slightly better Lignumis compat (let Lignumis handle unlock for burner crusher)
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+  Compatibility:
+    - Better vulcanus start: burner crusher and stone crushing are now unlocked with steel processing
+    - Better fulgora start: burner crusher is now unlocked with automation
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+  Bugfixes:
+    - Add Iron ore crushing to unlock for Concrete, to resolve softlock when starting on Vulcanus (thanks cackling.fiend!)
+    - Fix load error if spoiling is not enabled
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+  Locale:
+    - Fix missing locale key for casting-glass
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+  Minor Features:
+    - Add lithium crushing when Scrappy Industry is installed
+    - Add recipe for Concrete mix from molten iron
+  Balancing:
+    - Byproducts from asteroid crushing are affected by productivity again
+  Changes:
+    - Items that benefit from quality no longer use concrete mix instead of refined concrete
+    - Recycler still costs concrete to make Fulgora and Cerys starts possible
+  Bugfixes:
+    - Fix make_crushing_byproduct not setting ignored_by_productivity to the right amount
+    - Fix concrete mix barrels not actually spoiling
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+  Changes:
+    - Don't leave concrete mix in barrels too long!
+  Bugfixes:
+    - Revert changes to recipe result order for aesthetic reasons
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+  Changes:
+    - Increase crushed ore productivity from +25% to +50% for all ores to match iron/copper ore crushing
+    - Add CrushingIndustry.make_crushing_byproduct() helper function
+    - Rebalanced byproducts from asteroid crushing
+    - Byproducts are no longer affected by productivity
+  Bugfixes:
+    - [HOTFIX] Foundry, recycler, and electric kiln are now crafted with concrete items instead of mix
+  Compatibility:
+    - Marked Rocky Asteroids as incompatible to simplify obtuse compatibility code.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+  Compatibility:
+    - Add support for molten tungsten
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  Major Features:
+    - Add concrete mix, a new fluid that replaces water in the recipes for concrete and refined concrete
+    - Concrete mix costs water, crushed iron, and sand (making it a good sink for sand byproducts)
+    - Concrete mix replaces concrete and refined concrete in other recipes
+  Changes:
+    - Increase holmium solution cost from 1/2 sand/powder to 2/3 sand/powder
+    - Increase electrolyte cost from 1 to 3 sand
+  Compatibility:
+    - Add compatibility for Rocket-Silo Construction
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+  Changes:
+    - Crushed smelting recipes are no longer hidden from player crafting unless enabled with a setting
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+  Compatibility:
+    - Fix compat with Muluna
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+  Compatibility:
+    - Muluna: Change ingredient for Space crusher 1 from Quality module 2s to QM1s
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+  Bugfixes:
+    - Basic crushing or hand crafting wasn't added to character crushing
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+  Minor Features:
+    - Add minor API, to allow public access to the "make_crushing_icons" helper function
+  Balancing:
+    - Increased weight of big crushers to 100kg, reducing big crushers per rocket from 20 to 10
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+  Balancing:
+    - Increase Coal crushing recipe time from 1 -> 1.2 seconds (+20%) to match ore crushing recipes
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+  Compatibility:
+    - Fixed ingredients for Crushed titanium smelting (only available with SA disabled)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+  Balancing:
+    - Space crusher crafting speed has been reduced to 1.25
+    - Non-space crushers are no longer able to use quality modules when SC changes are enabled
+  Bugfixes:
+    - Mining burner crushers gave electric crushers instead
+    - Molten lead now takes 75 Crushed lead ore (+50%) to parity other ore melting recipes
+    - Casting titanium now takes 2x the Crushed titanium ore
+    - Burner crushers can now be connected to circuit networks
+  Graphics:
+    - Update crushing icons to use desaturated asteroid-crushing gears
+    - Change Crushed tungsten ore to match Tungsten ores colors slightly better
+  Locale:
+    - Change how crushed resources are localised for better support across languages
+  Changes:
+    - Compatibility work has been moved into separate files in prototypes/compat
+  Compatibility:
+    - Improve compatibility for Muluna (thanks to MeteorSwarm for collaborating on this!)
+    - Muluna: Space crusher technology is omitted when Muluna is installed, deferring to its tech changes
+    - Muluna: Crusher 2 is renamed to Space crusher 2 and buffed, though is more expensive to craft
+    - Lead: Alternative metallic asteroid crushing can now be crafted in assembling machines and advanced crushers
+    - Silica: Hide basic crusher from BZ mods if installed
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+  Major Features:
+    - Initial release

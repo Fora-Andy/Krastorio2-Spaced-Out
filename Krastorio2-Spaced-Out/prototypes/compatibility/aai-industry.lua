@@ -50,9 +50,9 @@ data_util.add_recipe_unlock("glass-processing", "kr-glass")
 data_util.remove_recipe_unlock("sand-processing", "sand")
 data_util.remove_recipe_unlock("glass-processing", "glass")
 
-data.raw.item["glass"].hidden = true
+data.raw.item["kr-glass"].hidden = true
 data.raw.recipe["glass"].hidden = true
-data.raw.item["sand"].hidden = true
+data.raw.item["kr-sand"].hidden = true
 data.raw.recipe["sand"].hidden = true
 
 data.raw.technology["kr-stone-processing"] = nil
