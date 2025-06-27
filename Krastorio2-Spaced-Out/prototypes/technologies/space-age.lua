@@ -86,6 +86,7 @@ data:extend({
         { "logistic-science-pack", 1 },
         { "chemical-science-pack", 1 },
         { "utility-science-pack", 1 },
+        { kr_optimization_tech_card_name, 1 },
         { "electromagnetic-science-pack", 1 },
       },
     },
