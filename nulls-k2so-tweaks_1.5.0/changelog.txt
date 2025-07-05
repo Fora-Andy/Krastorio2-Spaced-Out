@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2025-07-01
+  Changes:
+    - Restored default pumpjack behavior, and hid the mineral water pumpjack. In the context of Space Age, it didn't make much sense to be mining sulfuric acid with mineral water pumpjacks. Oil pumpjacks are renamed back to pumpjacks, and can mine basic fluid. Existing mineral pumpjacks will continue to function, but should be replaced. A migration file exists to convert the item form to normal pumpjacks.
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-06-30
+  Features:
+    - Standardized gas uses. Oxygen, hydrogen, and nitrogen are now common versions, compatible with Muluna, Maraxsis, and Paracelsin. Migration file exists to convert existing factories.
+    - Maraxsis: Atmosphere collection is now done in the atmospheric condenser.
+    - Maraxsis: Salt electrolysis is now done in the K2 electrolysis plant.
+    - Muluna: Carbon dioxide harvesting from Vulcanus' atmosphere is now done in the K2 atmospheric condenser.
+    - Muluna: Disable Muluna's water electrolysis recipe. Buffed K2's electrolysis plant water seperation recipe to match it. The two were redundant with one another.
+  Changes:
+    - Switched from K2 sand/glass over to common sand/glass. This has a migration, and should not be a breaking change. All factories/filters/circuitry will automatically use the new version and all items will convert.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-06-29
+  Features:
+    - New patch: Expanded Alternate Recipes. Currently this adds two new recipes for processing units that do not require rare metals, allowing for their production on Muluna and Moshine. These alternates require aluminum or silicon cells.
+    - Allow crushing of imersite in Crushing Industries electric crusher.
+  Changes:
+    - Fixed oversight of mining entities with a single minable result not giving the right converted sand/glass item. No known mods were affected.
+    - General refactor of codebase.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-06-29
+  Features:
+    - New patch: Sandardization. Fixes incompatibility between K2SO, Crushing Industries, Maraxis, and Moshine. All instances of sand and glass are reconfigured to use K2's version.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-06-28
+  Features:
+    - New patch: Rebalance Crushing Industry around Krastorio 2's ratios.
+    - New patch: Standardize stack sizes for other mods to fit with K2's defaults.
+  Changes:
+    - Muluna surface conditions now support the K2 advanced tank. For some reason...
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-06-28
+  Features:
+    - New patch: Fix Lighted Poles to respect K2SO's increased wire reach/supply area.
+    - New patch: Fix K2SO's nuclear locomotive not being placeable on Muluna.

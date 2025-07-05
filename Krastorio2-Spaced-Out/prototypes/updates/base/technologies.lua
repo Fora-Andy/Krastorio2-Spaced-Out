@@ -31,6 +31,7 @@ data_util.add_prerequisite("production-science-pack", "uranium-processing")
 data_util.add_prerequisite("productivity-module-2", "chemical-science-pack")
 data_util.add_prerequisite("productivity-module-3", "processing-unit")
 data_util.add_prerequisite("rocket-fuel", "kr-fuel")
+data_util.add_prerequisite("rocket-fuel", "kr-atmosphere-condensation")
 data_util.add_prerequisite("solar-energy", "kr-silicon-processing")
 data_util.add_prerequisite("speed-module-2", "chemical-science-pack")
 data_util.add_prerequisite("speed-module-3", "processing-unit")
@@ -105,6 +106,7 @@ data_util.add_recipe_unlock("foundry", "kr-casting-steel-pipe")
 data_util.add_recipe_unlock("foundry", "kr-casting-steel-pipe-to-ground")
 data_util.add_recipe_unlock("tungsten-carbide", "kr-carbide-processing-circuit")
 data_util.add_recipe_unlock("biochamber", "kr-bio-processing-circuit")
+data_util.add_recipe_unlock("bioflux-processing", "kr-spoilage-decomposition")
 data_util.add_recipe_unlock("rocket-turret", "kr-rocket-turret")
 data_util.add_recipe_unlock("rocket-turret", "kr-explosive-turret-rocket")
 data_util.add_recipe_unlock("rocket-turret", "kr-nuclear-turret-rocket")
@@ -148,7 +150,9 @@ data_util.add_research_unit_ingredient(next.name, new_science_pack )
 end
 
 generate_upgrade("steel-plate-productivity","steel-plate-productivity-6",kr_optimization_tech_card_name, "infinite")
-generate_upgrade("mining-productivity-3","mining-productivity-6",kr_optimization_tech_card_name, "infinite")
+if not mods["planet_erimos_prime"] then
+   generate_upgrade("mining-productivity-3","mining-productivity-6",kr_optimization_tech_card_name, "infinite")
+end
 
 data_util.add_research_unit_ingredient("plastic-bar-productivity", kr_optimization_tech_card_name )
 data_util.add_research_unit_ingredient("rocket-fuel-productivity", kr_optimization_tech_card_name )

@@ -89,7 +89,7 @@ data:extend({
       { type = "item", name = "kr-sand", amount = 16 },
     },
     results = {
-      { type = "item", name = "hot-glass", amount = 8 },
+      { type = "item", name = "kr-glass", amount = 8 },
     },
     allow_productivity = true,
     always_show_made_in = true,
