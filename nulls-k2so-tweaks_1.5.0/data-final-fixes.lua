@@ -6,6 +6,7 @@ require("k2so-tweaks.patches.mods.crushing-industry")
 require("k2so-tweaks.patches.mods.crushing-industry-ratios")
 require("k2so-tweaks.patches.mods.krastorio2-spaced-out")
 require("k2so-tweaks.patches.mods.lighted-poles-plus")
+require("k2so-tweaks.patches.mods.hot-metals")
 
 -- Planet-specific compatibility patches.
 require("k2so-tweaks.patches.planets.maraxsis")
